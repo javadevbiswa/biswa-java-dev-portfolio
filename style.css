@@ -8,11 +8,12 @@ body {
   scroll-behavior: smooth;
 }
 
+
 /* COVER SECTION */
 .cover {
   position: relative;
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  background: url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +125,7 @@ section {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgb(0 0 0 / 0.08);
   transition: box-shadow 0.3s ease;
+  scroll-margin-top: 100px; 
 }
 
 section:hover {
@@ -276,6 +278,32 @@ footer {
   margin-top: 3rem;
   user-select: none;
 }
+
+.interest-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.interest-list li {
+  background: #f0f0f0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .interest-list li {
+    background: #2c3e50;
+    color: white;
+  }
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
