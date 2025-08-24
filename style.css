@@ -1,4 +1,8 @@
 /* Reset and base styles */
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -13,7 +17,7 @@ body {
 .cover {
   position: relative;
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  background: url('biswa_cover_pic1.jpg?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,6 +300,53 @@ footer {
   align-items: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+.social-icons-cover {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons-cover a img {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.3s ease;
+  background-color: #333; /* fallback */
+}
+
+/* Individual platform backgrounds */
+.social-icons-cover a[href*="instagram"] img {
+  background-color: #E1306C;
+}
+
+.social-icons-cover a[href*="linkedin"] img {
+  background-color: #0077B5;
+}
+
+.social-icons-cover a[href*="github"] img {
+  background-color: #24292e;
+}
+
+.social-icons-cover a[href*="stackoverflow"] img {
+  background-color: #f48024;
+}
+
+.social-icons-cover a[href*=".pdf"] img {
+  background-color: #7f8c8d;
+}
+
+/* Hover effect */
+.social-icons-cover a:hover img {
+  transform: scale(1.15);
+  background-color: #2980b9 !important;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   .interest-list li {
