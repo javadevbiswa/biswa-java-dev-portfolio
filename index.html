@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Java Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cover Section -->
+	<section class="cover">
+	  <div class="overlay">
+		<h1>Hello, I'm Biswa Bhusan Sahoo</h1>
+		<p>Java Developer | Spring Boot | Backend Engineer</p>
+		<a href="#about" class="btn">Learn More</a>
+	  </div>
+	</section>
+
+
+  <header>
+    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile Photo" class="profile-pic" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a backend Java developer with strong knowledge of Spring Boot, REST APIs, and database design.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+        <div>
+          <h3>E-Commerce Platform</h3>
+          <p>Java + Spring Boot + Hibernate based application for online shopping.</p>
+          <a href="https://github.com/yourusername/ecommerce" target="_blank" class="btn-link">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+        <div>
+          <h3>Invoice Manager API</h3>
+          <p>RESTful API to manage invoices, clients, and billing using JWT and Swagger.</p>
+          <a href="https://github.com/yourusername/invoice-api" target="_blank" class="btn-link">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>MySQL/PostgreSQL</li>
+        <li>REST APIs</li>
+        <li>Git & GitHub</li>
+        <li>Docker</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Biswa Bhusan Sahoo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
