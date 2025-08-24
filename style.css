@@ -157,15 +157,6 @@ ul li {
   color: #34495e;
 }
 
-ul li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-  top: 4px;
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
 /* PROJECT CARDS */
 .project-card {
   display: flex;
@@ -346,6 +337,147 @@ footer {
   background-color: #2980b9 !important;
 }
 
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #e8f0fe;
+  padding: 8px 15px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(41, 128, 185, 0.15);
+  color: #2c3e50;
+  min-width: 140px;
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: invert(28%) sepia(67%) saturate(3922%) hue-rotate(189deg) brightness(92%) contrast(88%);
+}
+
+#education {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  position: relative;
+}
+
+#education h2 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.education-timeline {
+  position: relative;
+  margin-left: 30px;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 60px;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.edu-item::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #2980b9;
+  border-radius: 2px;
+}
+
+.edu-icon {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  background-color: #fff;
+  border: 3px solid #2980b9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-icon img {
+  width: 20px;
+  height: 20px;
+  filter: invert(20%) sepia(98%) saturate(1500%) hue-rotate(200deg) brightness(85%) contrast(90%);
+}
+
+.edu-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.edu-content h4 {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.edu-content .edu-year {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.edu-content p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-timeline {
+    margin-left: 0;
+  }
+
+  .edu-item {
+    padding-left: 50px;
+  }
+
+  .edu-icon {
+    left: -10px;
+  }
+}
+
 
 
 @media (prefers-color-scheme: dark) {
@@ -354,6 +486,7 @@ footer {
     color: white;
   }
 }
+
 
 
 /* RESPONSIVE */
